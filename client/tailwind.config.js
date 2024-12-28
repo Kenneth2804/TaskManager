@@ -2,7 +2,8 @@
 
 module.exports = {
   content: [
-    "../client/src/app.js"
+    "../client/src/components/Home.jsx",
+
   ],
   theme: {
     extend: {},

@@ -1,11 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+
 
 function App() {
   return (
-    <div className="text-center p-4 bg-blue-500 text-white">
-      <h1 className="text-4xl font-bold">¡Hola, Tailwind!</h1>
+    <BrowserRouter>
+    <div className="App">
+  <Routes>
+    <Route path='/' exact element={<Home/>}></Route>
+
+  </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
